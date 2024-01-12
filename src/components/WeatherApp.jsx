@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 const WeatherApp = () => {
   const [weatherData, setWeatherData] = useState(null);
@@ -61,8 +61,8 @@ const WeatherApp = () => {
             <p className="card-text">{weatherData.weather[0].description.toUpperCase()}</p>
             <p className="card-text">Temperatura minima: {weatherData.main.temp_min} K</p>
             <p className="card-text">Temperatura massima: {weatherData.main.temp_max} K</p>
-            <Link to="#" className="btn btn-info">
-              Più info su questa città
+            <Link to={`/CityDetails/${city}`} role="button" className="btn btn-info">
+              Cliccami per altre info su questa località
             </Link>
           </div>
         </div>
