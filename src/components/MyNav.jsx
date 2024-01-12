@@ -14,6 +14,7 @@ const MyNav = () => {
               height="30"
               className="d-inline-block align-top rounded"
             />{" "}
+            Welcome to AppMeteo☀️
           </Navbar.Brand>
         </Container>
       </Navbar>
