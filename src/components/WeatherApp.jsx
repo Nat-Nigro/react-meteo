@@ -30,10 +30,10 @@ const WeatherApp = () => {
 
   return (
     <div className="container mt-5">
-      <h1 className="text-center mb-4">Benvenuti in AppMeteo</h1>
+      <h1 className="text-center mb-4 text-warning">Benvenuti in AppMete🌞</h1>
 
       <div className="mb-3">
-        <label htmlFor="cityInput" className="form-label">
+        <label htmlFor="cityInput" className="form-label text-white">
           Cerca la città che preferisci
         </label>
         <input
@@ -61,7 +61,7 @@ const WeatherApp = () => {
             <p className="card-text">{weatherData.weather[0].description.toUpperCase()}</p>
             <p className="card-text">Temperatura minima: {weatherData.main.temp_min} K</p>
             <p className="card-text">Temperatura massima: {weatherData.main.temp_max} K</p>
-            <Link to={`/CityDetails/${city}`} role="button" className="btn btn-info">
+            <Link to={`/CityDetails/${city}`} role="button" className="btn btn-success">
               Cliccami per altre info su questa località
             </Link>
           </div>

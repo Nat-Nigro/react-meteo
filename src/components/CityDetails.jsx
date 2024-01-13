@@ -30,7 +30,7 @@ const CityDetails = () => {
 
   return (
     <div className="container mt-5">
-      <h1 className="text-center mb-4">Dettagli della città</h1>{" "}
+      <h1 className="text-center mb-4 text-warning">Dettagli della città</h1>
       <Link to="/" role="button" className="btn btn-info">
         Torna su Home
       </Link>
@@ -42,7 +42,7 @@ const CityDetails = () => {
               <img src={getWeatherIconUrl(cityWeather.weather[0].icon)} alt="Weather Icon" />
             </div>
             <p className="align-item-center">
-              Longitudine: {cityWeather.coord.lon} - Latitudine: {cityWeather.coord.lat}
+              Longitudine: {cityWeather.coord.lon} & Latitudine: {cityWeather.coord.lat}
             </p>
             <p className="card-text">Nazione: {cityWeather.sys.country}</p>
             <p className="card-text">{cityWeather.weather[0].description.toUpperCase()}</p>

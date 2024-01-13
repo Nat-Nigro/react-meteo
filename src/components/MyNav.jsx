@@ -1,5 +1,4 @@
 import { Container, Navbar } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
 
 const MyNav = () => {
   return (
@@ -14,7 +13,7 @@ const MyNav = () => {
               height="30"
               className="d-inline-block align-top rounded"
             />{" "}
-            Welcome to AppMeteo☀️
+            Welcome to AppMeteo
           </Navbar.Brand>
         </Container>
       </Navbar>
